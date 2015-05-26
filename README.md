@@ -1,3 +1,13 @@
+Armenia: The daylight saving time adjustment, Armenia Summer Time (AMST), was discontinued in 2012. http://en.wikipedia.org/wiki/Armenia_Time
+
+Belarus: Minsk Time. It is since 2011 defined as three hours ahead of UTC (UTC+03:00) without daylight savings time.
+http://en.wikipedia.org/wiki/Further-eastern_European_Time
+
+Russia: Prior to 2011, Russia moved its clocks backward and forward on the same annual cycle as Europe. On 27 March 2011, clocks were advanced as usual, but they did not go back that October, effectively making Moscow Time UTC+4 permanently.[2] On 26 October 2014, following another change in the law, the clocks in most of the country were moved back one hour, but DST was not reintroduced; Moscow Time returned to UTC+3 permanently.
+http://en.wikipedia.org/wiki/Time_in_Russia#Daylight_saving_time
+
+
+
 ## Introduction
 
 This script gives you the zone info key representing your device's time zone setting. 
