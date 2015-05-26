@@ -1,0 +1,3 @@
+#Node modules to "compile" project
+#They can be loaded by "npm install" command
+node_modules
