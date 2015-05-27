@@ -413,6 +413,9 @@ jstz.olson = jstz.olson || {};
  * The mapped arrays is used for constructing the jstz.TimeZone object from within
  * jstz.determine();
  */
+
+//There should be no entries with duplicate keys (like '180,0': 'Asia/Baghdad', '180,0': 'Europe/Moscow')
+//If some entry became a duplicate because DST was abolished, you shoul probably delete this entry
 jstz.olson.timezones = {
     '-720,0': 'Etc/GMT+12',
     '-660,0': 'Pacific/Pago_Pago',
