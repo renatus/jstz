@@ -11,8 +11,10 @@ import os
 AMBIGUOUS_DST_ZONES = ['Africa/Cairo', 'America/Asuncion', 'America/Campo_Grande', 'America/Goose_Bay',
                        'America/Havana', 'America/Mazatlan', 'America/Mexico_City', 'America/Miquelon',
                        'America/Santa_Isabel', 'America/Sao_Paulo', 'Asia/Amman', 'Asia/Damascus',
-                       'Asia/Dubai', 'Asia/Gaza', 'Asia/Jerusalem', 'Australia/Lord_Howe',
-                       'Australia/Perth', 'Europe/Helsinki', 'Pacific/Apia', 'Pacific/Fiji']
+                       'Asia/Dubai', 'Asia/Gaza', 'Asia/Irkutsk', 'Asia/Jerusalem', 'Asia/Kamchatka',
+                       'Asia/Krasnoyarsk', 'Asia/Omsk', 'Asia/Vladivostok', 'Asia/Yakutsk', 'Asia/Yekaterinburg',
+                       'Asia/Yerevan', 'Australia/Lord_Howe', 'Australia/Perth', 'Europe/Helsinki',
+                       'Europe/Minsk', 'Europe/Moscow', 'Pacific/Apia', 'Pacific/Fiji']
 
 OTHER_DST_ZONES = ['Africa/Johannesburg', 'Africa/Windhoek', 'America/Adak', 'America/Anchorage', 'America/Chicago',
                    'America/Denver', 'America/Godthab', 'America/Halifax', 'America/Los_Angeles', 'America/Montevideo',
@@ -27,9 +29,7 @@ OTHER_TIMEZONES = ['America/Guatemala', 'Pacific/Pitcairn', 'Asia/Kolkata', 'Pac
                    'Atlantic/Cape_Verde', 'America/Phoenix', 'America/Santo_Domingo', 'UTC',
                    'Asia/Kathmandu', 'America/Argentina/Buenos_Aires', 'Pacific/Marquesas',
                    'Pacific/Norfolk', 'Asia/Kabul', 'Africa/Lagos', 'Pacific/Gambier', 'Asia/Rangoon',
-                   'Etc/GMT+12', 'Australia/Eucla', 'America/Caracas', 'Asia/Irkutsk', 'Asia/Vladivostok',
-                   'Asia/Kamchatka', 'Asia/Krasnoyarsk', 'Asia/Omsk', 'Asia/Yakutsk', 'Asia/Yekaterinburg',
-                   'Asia/Yerevan', 'Europe/Minsk', 'Europe/Moscow']
+                   'Etc/GMT+12', 'Australia/Eucla', 'America/Caracas']
 
 OLSON_TO_WIN32_MAPPING = {
     'Etc/GMT+12': 'Dateline Standard Time',
