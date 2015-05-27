@@ -413,6 +413,9 @@ jstz.olson = jstz.olson || {};
  * The mapped arrays is used for constructing the jstz.TimeZone object from within
  * jstz.determine();
  */
+
+//There should be no entries with duplicate keys (like '180,0': 'Asia/Baghdad', '180,0': 'Europe/Moscow')
+//If some entry became a duplicate because DST was abolished, you shoul probably delete this entry
 jstz.olson.timezones = {
     '-720,0': 'Etc/GMT+12',
     '-660,0': 'Pacific/Pago_Pago',
@@ -451,33 +454,25 @@ jstz.olson.timezones = {
     '120,1': 'Asia/Beirut',
     '120,0': 'Africa/Johannesburg',
     '180,0': 'Asia/Baghdad',
-    '180,1': 'Europe/Moscow',
     '210,1': 'Asia/Tehran',
     '240,0': 'Asia/Dubai',
     '240,1': 'Asia/Baku',
     '270,0': 'Asia/Kabul',
-    '300,1': 'Asia/Yekaterinburg',
     '300,0': 'Asia/Karachi',
     '330,0': 'Asia/Kolkata',
     '345,0': 'Asia/Kathmandu',
     '360,0': 'Asia/Dhaka',
-    '360,1': 'Asia/Omsk',
     '390,0': 'Asia/Rangoon',
-    '420,1': 'Asia/Krasnoyarsk',
     '420,0': 'Asia/Jakarta',
     '480,0': 'Asia/Shanghai',
-    '480,1': 'Asia/Irkutsk',
     '525,0': 'Australia/Eucla',
     '525,1,s': 'Australia/Eucla',
-    '540,1': 'Asia/Yakutsk',
     '540,0': 'Asia/Tokyo',
     '570,0': 'Australia/Darwin',
     '570,1,s': 'Australia/Adelaide',
     '600,0': 'Australia/Brisbane',
-    '600,1': 'Asia/Vladivostok',
     '600,1,s': 'Australia/Sydney',
     '630,1,s': 'Australia/Lord_Howe',
-    '660,1': 'Asia/Kamchatka',
     '660,0': 'Pacific/Noumea',
     '690,0': 'Pacific/Norfolk',
     '720,1,s': 'Pacific/Auckland',
@@ -488,7 +483,7 @@ jstz.olson.timezones = {
     '840,0': 'Pacific/Kiritimati'
 };
 
-/* Build time: 2014-11-28 11:10:50Z Build by invoking python utilities/dst.py generate */
+/* Build time: 2015-05-27 22:00:08Z Build by invoking python utilities/dst.py generate */
 jstz.olson.dst_rules = {
     "years": [
         2008,
@@ -921,7 +916,7 @@ jstz.olson.dst_rules = {
                     "s": 1364508000000
                 },
                 {
-                    "e": 1411678800000,
+                    "e": 1414098000000,
                     "s": 1395957600000
                 }
             ]
@@ -1305,7 +1300,8 @@ jstz.olson.dst_rules = {
             ]
         }
     ]
-};    if (typeof exports !== 'undefined') {
+};
+    if (typeof exports !== 'undefined') {
         exports.jstz = jstz;
     } else {
         root.jstz = jstz;

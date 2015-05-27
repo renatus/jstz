@@ -1,4 +1,4 @@
-/* Build time: 2014-11-28 11:10:50Z Build by invoking python utilities/dst.py generate */
+/* Build time: 2015-05-27 22:00:08Z Build by invoking python utilities/dst.py generate */
 jstz.olson.dst_rules = {
     "years": [
         2008,
@@ -431,7 +431,7 @@ jstz.olson.dst_rules = {
                     "s": 1364508000000
                 },
                 {
-                    "e": 1411678800000,
+                    "e": 1414098000000,
                     "s": 1395957600000
                 }
             ]
